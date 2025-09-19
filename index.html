@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>As 7 Artes Clássicas</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <header class="cabecalho">
+    <nav class="container d-flex justify-content-between align-items-center py-3">
+      <a href="#inicio" class="d-flex align-items-center gap-2 text-decoration-none">
+        <img src="img/logo.png" class="logo" alt="Logo As 7 Artes" />
+        <span class="brand fw-bold">As 7 Artes</span>
+      </a>
+
+      <ul class="nav d-none d-md-flex">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#artes">As 7 Artes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Acessibilidade -->
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-escuro rotacao-botao fw-bold" aria-expanded="false" aria-controls="opcoes-acessibilidade">Acessibilidade</button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista" role="group" aria-label="Controles de fonte">
+          <button id="aumentar-fonte" class="btn btn-escuro fw-bold" aria-label="Aumentar fonte">A +</button>
+          <button id="diminuir-fonte" class="btn btn-escuro fw-bold" aria-label="Diminuir fonte">A -</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio" class="hero container">
+    <div class="hero-card p-4 p-md-5">
+      <h1 class="display-5 fw-bold mb-2">As 7 Artes Clássicas</h1>
+      <p class="lead mb-4">Um panorama elegante e direto sobre as sete formas de expressão artística que moldaram a cultura.</p>
+      <a href="#artes" class="btn btn-primario btn-lg fw-semibold">Explorar</a>
+    </div>
+    <img src="img/hero-artes.jpg" class="hero-img" alt="Imagem de destaque representando as artes" loading="lazy">
+  </main>
+
+  <section id="artes" class="container secao-artes py-5">
+    <h2 class="titulo-secao">As Sete Artes</h2>
+    <p class="subtitulo text-muted mb-4">Arquitetura, Escultura, Pintura, Música, Literatura, Dança e Cinema.</p>
+
+    <!-- grid de cards -->
+    <div class="row g-4">
+      <!-- 1 Arquitetura -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card-arte">
+          <img src="img/arte-arquitetura.jpg" alt="Arquitetura" class="card-arte-img" loading="lazy">
+          <div class="card-arte-body">
+            <h3>Arquitetura</h3>
+            <p>Organização do espaço e da forma para criar ambientes funcionais e simbólicos.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- 2 Escultura -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card-arte">
+          <img src="img/arte-escultura.jpg" alt="Escultura" class="card-arte-img" loading="lazy">
+          <div class="card-arte-body">
+            <h3>Escultura</h3>
+            <p>Arte tridimensional em pedra, metal, madeira ou novos materiais.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- 3 Pintura -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card-arte">
+          <img src="img/arte-pintura.jpg" alt="Pintura" class="card-arte-img" loading="lazy">
+          <div class="card-arte-body">
+            <h3>Pintura</h3>
+            <p>Cores e técnicas para representar o mundo ou ideias no plano.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- 4 Música -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card-arte">
+          <img src="img/arte-musica.jpg" alt="Música" class="card-arte-img" loading="lazy">
+          <div class="card-arte-body">
+            <h3>Música</h3>
+            <p>Som, ritmo e harmonia como linguagem universal.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- 5 Literatura -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card-arte">
+          <img src="img/arte-literatura.jpg" alt="Literatura" class="card-arte-img" loading="lazy">
+          <div class="card-arte-body">
+            <h3>Literatura</h3>
+            <p>Palavras que narram, poetizam e refletem a condição humana.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- 6 Dança -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card-arte">
+          <img src="img/arte-danca.jpg" alt="Dança" class="card-arte-img" loading="lazy">
+          <div class="card-arte-body">
+            <h3>Dança</h3>
+            <p>Movimento do corpo como expressão estética e cultural.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- 7 Cinema -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card-arte">
+          <img src="img/arte-cinema.jpg" alt="Cinema" class="card-arte-img" loading="lazy">
+          <div class="card-arte-body">
+            <h3>Cinema</h3>
+            <p>A sétima arte: imagem em movimento, narrativa e tecnologia.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="galeria-wrapper py-5">
+    <div class="container">
+      <h2 class="titulo-secao">Galeria</h2>
+      <div class="row g-3">
+        <div class="col-12 col-md-4"><img src="img/galeria-1.jpg" class="galeria-img" alt="Obra 1"></div>
+        <div class="col-12 col-md-4"><img src="img/galeria-2.jpg" class="galeria-img" alt="Obra 2"></div>
+        <div class="col-12 col-md-4"><img src="img/galeria-3.jpg" class="galeria-img" alt="Obra 3"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="container py-5">
+    <h2 class="titulo-secao">Contato</h2>
+    <form class="formulario">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" id="nome" class="form-control" placeholder="Seu nome" />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Seu email" />
+      </div>
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea id="mensagem" class="form-control" rows="3" placeholder="Escreva sua mensagem"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primario">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="rodape text-center py-3">
+    <p>Projeto acadêmico — As 7 Artes Clássicas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
